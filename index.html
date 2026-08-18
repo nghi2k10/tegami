@@ -638,7 +638,7 @@ Thân mến,
     }
 
     const cleanPhone = rawPhone.replace(/[\s\-\.]/g, "");
-    const phoneRegex = /^0\d{9}$/;
+    const phoneRegex = /^0[35789]\d{8}$/;
     
     if (!phoneRegex.test(cleanPhone)) {
       modalFeedback.className = 'modal-feedback error';
